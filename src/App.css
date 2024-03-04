@@ -1,5 +1,19 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Set the minimum height of the container to 100% of the viewport height */
+  background-color: white; /* Dark blue background */
+  font-family: Consolas, monospace;
+  position: relative; /* Make the container a positioned parent */
+}
+
+.App-header {
+  position: fixed; /* Make the header fixed */
+  top: 10%; /* Fixed position 10% from the top */
+  width: 100%; /* Full width */
+  text-align: center; /* Center the text horizontally */
 }
 
 .App-logo {
@@ -7,32 +21,8 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media (max-width: 600px) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+    height: 20vmin;
   }
 }
