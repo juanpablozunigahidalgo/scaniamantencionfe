@@ -1,24 +1,24 @@
-Scania Test for the Job position : "fullstack developer AI Enablement".
+#Scania Test for the Job position : "fullstack developer AI Enablement".
 I got instructions available at this google drive: https://docs.google.com/document/d/1D2rc7hQs4WmlGRBs1f5fPO4RiJ3pzSDSqsmGGyY9f2c/edit?usp=sharing
 
-Main Idea
+#Main Idea
 Every machine, including trucks like those from Scania, requires regular maintenance after accumulating a certain number of hours or kilometers. This maintenance involves tasks such as changing oil filters, oil, ball bearings, air filters, and various other parts. Effective machine maintenance is crucial for businesses, ensuring smooth operations and minimizing maintenance costs, ultimately leading to increased profits across industries.
 
 To address this need, my solution proposes an AI diagnostic tool that translates mechanical symptoms of trucks into root mechanical problems. This tool is designed to be accessible to operators, mechanical engineers, and technicians, whether they are in operational settings (such as mines or transportation) or in maintenance facilities (such as mechanical workshops). Users can access this application from any internet-connected device, be it a computer, mobile phone, or other devices.
 
 By utilizing this tool, maintenance becomes more efficient and reliable, as it eliminates the potential for human error. Scania stands to benefit greatly from this concept, particularly by integrating advanced language models like ChatGPT through fine-tuning, thus enhancing the tool's capabilities and centralizing its maintenance operations.
 
-About the development.
+#About the development.
 The application I developed, deployed on GitHub using the REACT-TYPESCRIPT framework. It uses also MUI Libriaries that are important to keep a decent style with minimal effort. Initially utilized REACT-REDUX to avoid the need for a backend. However, for improved usability and scalability, integrating a backend becomes essential. To achieve this, I recommend leveraging Google Cloud's Cloud Functions, offering scalable backend logic seamlessly integrated with the existing frontend. The files "LLMGenerator" and "LLMGeneratorfe" could serve as components of the backend solution, handling server-side tasks and frontend interactions, respectively. Google Cloud offers scalability, reliability, and security benefits, making it a robust choice for professional-grade solutions.
 
 Now it is live in this adress: https://juanpablozunigahidalgo.github.io/scaniamantencionfe/
 
 The code files are here: https://github.com/juanpablozunigahidalgo/scaniamantencionfe/tree/master
 
-Limitations.
+#Limitations.
 The application utilizes a CHAT GPT API key. I encountered several issues with it, primarily due to the lack of HTTPS availability. Theoretically, it should function properly with HTTPS and the correct API key.
 
-Future steeps.
+#Future steeps.
 There are several potential next steeps. For instance:
 
 -Scania can have its own LLM CHAT GPT AI Fine tune model that translate syntoms to root causes. this will be so powerfull since it can increase , only for scania, its market share by providing to their costumers top notch solutions to improve their business by lowering maintenance cost.
